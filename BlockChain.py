@@ -80,7 +80,7 @@ class BlockChain:
         self._chain.pop(i)
         self.setIndex()
         n = self.validateChain()
-        self.mineChain(n)
+        self.remineChain(n)
     def remineChain(self, n):
         for num in range(n,self._chain.__len__()):
             if not num == 0:
